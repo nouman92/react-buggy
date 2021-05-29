@@ -10,7 +10,10 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 # COPY package-lock.json ./
 RUN npm install
-# RUN npm install react-scripts@3.4.1 -g --silent
+# RUN npm install react-scripts@3.4.1 -g --silent      
+
+RUN docker pull gesellix/trufflehog
+RUN docker run gesellix/trufflehog --json --regex https://github.com/SadiaAshfaq2812/react-buggy.git > trufflehog
 
 # add app
 COPY . ./
