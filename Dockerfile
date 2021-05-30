@@ -16,7 +16,8 @@ RUN npm install
 RUN npm install trufflehog
 
 # Run trufflehog
-RUN trufflehog --json --regex https://github.com/SadiaAshfaq2812/react-buggy.git > trufflehog
+RUN truffleHog --regex --entropy=False https://github.com/dxa4481/truffleHog.git
+# RUN trufflehog --json --regex https://github.com/SadiaAshfaq2812/react-buggy.git > trufflehog
 # RUN docker pull gesellix/trufflehog
 # RUN docker run gesellix/trufflehog --json --regex https://github.com/SadiaAshfaq2812/react-buggy.git > trufflehog
 
