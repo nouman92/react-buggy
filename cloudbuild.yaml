@@ -11,7 +11,7 @@ steps:
 # build step to echo "Hello, world!"
 - name: 'gcr.io/thesisproject1859/docker'
   args: ['run', 'echo', 'React project!']
-  wait_for: ['latest']
+  # wait_for: ['latest']
 
 # # Deploy container image to Cloud Run
 # - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
