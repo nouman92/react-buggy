@@ -28,3 +28,5 @@ COPY . ./
 
 # start app
 CMD ["npm", "start"]
+
+EXPOSE 8080 
