@@ -4,9 +4,9 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: ['build', '-t', 'gcr.io/thesisproject1859/react', '.']
 
-# Pull the container image to Container Registry
+# Push the container image to Container Registry
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['pull', 'gcr.io/thesisproject1859/react']
+  args: ['push', 'gcr.io/thesisproject1859/react']
 
 # build step to echo "Hello, world!"
 - name: 'gcr.io/thesisproject1859/docker'
