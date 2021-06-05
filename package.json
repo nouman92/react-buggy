@@ -7,10 +7,7 @@
     "npm": "6.7.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "start": "node server.js",
     "lint": "eslint src",
     "wdioTest": "node ./node_modules/.bin/wdio ./wdio.conf.js"
   },
