@@ -1,5 +1,5 @@
 module.exports = {
-    local: 'http://localhost:3000/',
+    local: 'https://react-eop2gprqzq-uc.a.run.app/',
     prod: '',
     qa: ''
 }
