@@ -10,7 +10,7 @@ steps:
 
 # build step to echo "Hello, world!"
 - name: 'gcr.io/thesisproject1859/react'
-  args: ['run', '--image', 'gcr.io/thesisproject1859/react']
+  args: ['run', 'deploy', 'nginx', '--image', 'gcr.io/thesisproject1859/react']
   # wait_for: ['latest']
 
 # # Deploy container image to Cloud Run
