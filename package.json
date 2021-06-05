@@ -2,6 +2,10 @@
   "name": "react-buggy",
   "version": "1.0.0",
   "description": "Experimental new version of buggy.peterbe.com",
+  "engines": {
+    "node": "11.10.0",
+    "npm": "6.7.0"
+  },
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src",
