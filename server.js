@@ -7,10 +7,10 @@ new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
   historyApiFallback: true
-}).listen(3000, 'https://react-eop2gprqzq-uc.a.run.app', function (err, result) {
+}).listen(3000, 'http://localhost', function (err, result) {
   if (err) {
     return console.log(err);
   }
   console.log('Hello world listening on port', port);
-  console.log('Listening at https://react-eop2gprqzq-uc.a.run.app:3000');
+  console.log('Listening at http://localhost');
 });

@@ -8,5 +8,5 @@ This project needs a name.
 ```
 npm install
 npm start
-open https://react-eop2gprqzq-uc.a.run.app:3000
+open http://localhost:3000
 ```
