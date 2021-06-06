@@ -8,5 +8,5 @@ This project needs a name.
 ```
 npm install
 npm start
-open 127.0.0.1:3000
+open 127.0.0.1:8080
 ```
