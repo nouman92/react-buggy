@@ -10,6 +10,10 @@ new WebpackDevServer(webpack(config), {
   if (err) {
     return console.log(err);
   }
-
   console.log('Listening at https://react-eop2gprqzq-uc.a.run.app:3000');
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log('Hello world listening on port', port);
 });
