@@ -7,7 +7,7 @@ new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
   historyApiFallback: true
-}).listen(3000, 'localhost', function (err, result) {
+}).listen(3000, 'https://react-eop2gprqzq-uc.a.run.app', function (err, result) {
   if (err) {
     return console.log(err);
   }
