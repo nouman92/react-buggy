@@ -1,5 +1,5 @@
 module.exports = {
-    local: '127.0.0.1:3000',
+    local: '0.0.0.0:3000',
     prod: '',
     qa: ''
 }
