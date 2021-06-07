@@ -1,6 +1,6 @@
 steps:
-- name: 'gcr.io/thesisproject1859/sonar-scanner'
-  args: ['-Dsonar.host.url=https://sonarcloud.io', '-Dsonar.login={specify}', '-Dsonar.projectKey={specify}', '-Dsonar.organization={specify}', '-Dsonar.sources=.']
+# - name: 'gcr.io/thesisproject1859/sonar-scanner'
+  # args: ['-Dsonar.host.url=https://sonarcloud.io', '-Dsonar.login={specify}', '-Dsonar.projectKey={specify}', '-Dsonar.organization={specify}', '-Dsonar.sources=.']
 # tags: ['cloud-builders-community']
 
 # Build the container image
