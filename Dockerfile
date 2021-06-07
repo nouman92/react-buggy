@@ -15,6 +15,11 @@ RUN npm install
 # RUN npm install react-scripts@3.4.1 -g --silent
 
 RUN npm install trufflehog
+RUN adduser -S truffleHog
+USER truffleHog
+WORKDIR /app
+ENTRYPOINT [ "trufflehog" ]
+CMD [ "-h" ]
 
 # add app
 COPY . ./
