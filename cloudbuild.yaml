@@ -1,7 +1,4 @@
 steps:
-# - name: 'gcr.io/thesisproject1859/sonar-scanner'
-  # args: ['-Dsonar.host.url=https://sonarcloud.io', '-Dsonar.login={specify}', '-Dsonar.projectKey={specify}', '-Dsonar.organization={specify}', '-Dsonar.sources=.']
-# tags: ['cloud-builders-community']
 
 # Build the container image
 - name: 'gcr.io/cloud-builders/docker'
@@ -15,3 +12,7 @@ steps:
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: gcloud
   args: ['run', 'deploy', 'react', '--image', 'gcr.io/thesisproject1859/react', '--port', '3000', '--region', 'us-central1', '--platform', 'managed', '--allow-unauthenticated']
+
+# - name: 'gcr.io/thesisproject1859/sonar-scanner'
+  # args: ['-Dsonar.host.url=https://sonarcloud.io', '-Dsonar.login={specify}', '-Dsonar.projectKey={specify}', '-Dsonar.organization={specify}', '-Dsonar.sources=.']
+# tags: ['cloud-builders-community']
