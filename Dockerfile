@@ -14,12 +14,9 @@ COPY package.json ./
 RUN npm install
 # RUN npm install react-scripts@3.4.1 -g --silent
 
-RUN npm install trufflehog
-RUN adduser -S truffleHog
-USER truffleHog
-WORKDIR /app
-ENTRYPOINT [ "trufflehog" ]
-CMD [ "-h" ]
+# RUN npm install trufflehog
+# RUN truffleHog
+# RUN trufflehog -c ./config.json
 
 # add app
 COPY . ./
