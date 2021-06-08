@@ -16,4 +16,4 @@ steps:
   # args: ['-Dsonar.host.url=https://sonarcloud.io', '-Dsonar.login={specify}', '-Dsonar.projectKey={specify}', '-Dsonar.organization={specify}', '-Dsonar.sources=.']
 # tags: ['cloud-builders-community']
 
-# its my cloud build file
+# its my cloud build file.
