@@ -4,11 +4,11 @@ RUN npm install trufflehog
 # set working directory
 WORKDIR /app
 
-RUN adduser -S truffleHog
-USER truffleHog
-WORKDIR /app
-ENTRYPOINT [ "trufflehog" ]
-CMD [ "-h" ]
+# RUN adduser -S truffleHog
+# USER truffleHog
+# WORKDIR /app
+# ENTRYPOINT [ "trufflehog" ]
+# CMD [ "-h" ]
 
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
@@ -22,7 +22,8 @@ RUN npm install
 # RUN npm install react-scripts@3.4.1 -g --silent
 
 # RUN npm install trufflehog
-# RUN truffleHog
+RUN truffleHog https://github.com/SadiaAshfaq2812/react-buggy.git
+      
 # RUN trufflehog -c ./config.json
 
 
