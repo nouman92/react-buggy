@@ -1,14 +1,7 @@
 FROM node:12
 
-RUN npm install trufflehog
 # set working directory
 WORKDIR /app
-
-# RUN adduser -S truffleHog
-# USER truffleHog
-# WORKDIR /app
-# ENTRYPOINT [ "trufflehog" ]
-# CMD [ "-h" ]
 
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
@@ -18,11 +11,12 @@ COPY package.json ./
 
 # COPY package-lock.json ./
 
+RUN npm install trufflehog
 RUN npm install
 # RUN npm install react-scripts@3.4.1 -g --silent
 
 # RUN npm install trufflehog
-RUN truffleHog https://github.com/SadiaAshfaq2812/react-buggy.git
+RUN truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git > truffleHog
       
 # RUN trufflehog -c ./config.json
 
