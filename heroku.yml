@@ -3,4 +3,9 @@ build:
     web: Dockerfile
 
 run:
-  web: npm start
+  web: npm run start
+
+release:
+  image: web
+  command:
+    - npm run migrate up
