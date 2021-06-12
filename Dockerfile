@@ -1,7 +1,14 @@
 FROM node:12
 
+RUN apk add --no-cache git && pip install trufflehog
 # set working directory
 WORKDIR /app
+
+RUN adduser -S truffleHog
+USER truffleHog
+WORKDIR /app
+ENTRYPOINT [ "trufflehog" ]
+CMD [ "-h" ]
 
 # add `/app/node_modules/.bin` to $PATH
 ENV PATH /app/node_modules/.bin:$PATH
@@ -17,6 +24,8 @@ RUN npm install
 # RUN npm install trufflehog
 # RUN truffleHog
 # RUN trufflehog -c ./config.json
+
+
 
 # add app
 COPY . ./
