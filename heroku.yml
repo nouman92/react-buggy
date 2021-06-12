@@ -12,7 +12,8 @@ build:
 # tools and run commands
 run:
   web: npm i -g trufflehog
-  web: truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git > trufflehog
+  web: trufflehog --config ./.env
+  # web: truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git > trufflehog
   web: pwd
   web: npm run start
   web: ls
