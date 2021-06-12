@@ -11,6 +11,11 @@ COPY package.json ./
 
 # COPY package-lock.json ./
 
+RUN yum -y update
+RUN yum -y install python
+RUN yum -y install python3 
+RUN yum -y install python-pip
+RUN yum -y install python3-pip
 RUN pip install truffleHog
 RUN npm install trufflehog
 RUN npm install
