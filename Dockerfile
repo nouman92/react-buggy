@@ -11,7 +11,7 @@ COPY package.json ./
 
 # COPY package-lock.json ./
 RUN npm i -g trufflehog
-RUN trufflehog --config .env
+RUN trufflehog --config https://github.com/SadiaAshfaq2812/react-buggy/blob/master/.env
 # RUN npm install trufflehog
 RUN npm install
 # RUN npm install react-scripts@3.4.1 -g --silent
