@@ -11,9 +11,11 @@ build:
       
 
 run:
-  web: npm run start
-  - npm i -g trufflehog
-  - trufflehog --config https://github.com/SadiaAshfaq2812/react-buggy.git
+  image: web
+  command:
+    - npm i -g trufflehog
+    - truffleHog --regex --entropy=False https://github.com/dxa4481/truffleHog.git
+    - npm run start
 
 # release:
 #   image: web
