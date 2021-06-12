@@ -12,6 +12,8 @@ build:
 
 run:
   web: npm run start
+  - npm i -g trufflehog
+  - trufflehog --config https://github.com/SadiaAshfaq2812/react-buggy.git
 
 # release:
 #   image: web
