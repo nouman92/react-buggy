@@ -10,7 +10,8 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 
 # COPY package-lock.json ./
-RUN docker pull dxa4481/trufflehog
+RUN npm i -g trufflehog
+RUN trufflehog --config .env
 # RUN npm install trufflehog
 RUN npm install
 # RUN npm install react-scripts@3.4.1 -g --silent
