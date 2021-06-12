@@ -1,8 +1,8 @@
 
 build:
-  script:
-    - docker pull dxa4481/trufflehog
-    - truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
+  # script:
+  #   - docker pull dxa4481/trufflehog
+  #   - truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
   docker:
     web: Dockerfile
     # web: truffleHog --regex --entropy=False https://github.com/dxa4481/truffleHog.git
