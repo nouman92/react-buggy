@@ -10,19 +10,14 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 
 # COPY package-lock.json ./
-
-RUN yum -y update
-RUN yum -y install python
-RUN yum -y install python3 
-RUN yum -y install python-pip
-RUN yum -y install python3-pip
-RUN pip install truffleHog
-RUN npm install trufflehog
+RUN docker pull dxa4481/trufflehog
+RUN truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
+# RUN npm install trufflehog
 RUN npm install
 # RUN npm install react-scripts@3.4.1 -g --silent
 
 # RUN npm install trufflehog
-RUN truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git > truffleHog
+
       
 # RUN trufflehog -c ./config.json
 
