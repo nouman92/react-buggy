@@ -1,6 +1,6 @@
 FROM node:12
 
-RUN apk add --no-cache git && pip install trufflehog
+RUN npm install trufflehog
 # set working directory
 WORKDIR /app
 
