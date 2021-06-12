@@ -1,5 +1,4 @@
-setup:
-  addons:
+script:
     - docker pull dxa4481/trufflehog
     - truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
 
