@@ -5,7 +5,7 @@ build:
 run:
   web: npm run start
 
-release:
-  image: web
-  command:
-    - npm run migrate up
+# release:
+#   image: web
+#   command:
+#     - npm run migrate up
