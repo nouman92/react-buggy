@@ -10,8 +10,7 @@ ENV PATH /app/node_modules/.bin:$PATH
 COPY package.json ./
 
 # COPY package-lock.json ./
-RUN docker pull dxa4481/trufflehog
-RUN truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
+
 # RUN npm install trufflehog
 RUN npm install
 # RUN npm install react-scripts@3.4.1 -g --silent
