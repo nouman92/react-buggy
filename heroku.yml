@@ -4,6 +4,8 @@ build:
   #   - docker pull dxa4481/trufflehog
   #   - truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
   docker:
+    pull: dxa4481/trufflehog
+    run: dxa4481/trufflehog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
     web: Dockerfile
     # web: truffleHog --regex --entropy=False https://github.com/dxa4481/truffleHog.git
     # web: docker pull gesellix/trufflehog
@@ -11,8 +13,10 @@ build:
       
 # tools and run commands
 run:
-  web: npm i -g trufflehog
-  web: trufflehog
+  # web: npm i -g trufflehog
+  # web: trufflehog
+  web: dxa4481/trufflehog
+  web: dxa4481/trufflehog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
   # web: truffleHog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git > trufflehog
   web: pwd
   web: npm run start
@@ -22,3 +26,8 @@ run:
 #   image: web
 #   command:
 #     - npm run migrate up
+
+
+
+
+
