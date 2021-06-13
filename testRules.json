@@ -1,3 +1,7 @@
 {
-    "RSA private key": "-----BEGIN EC PRIVATE KEY-----"
+    "RSA private key": "-----BEGIN EC PRIVATE KEY-----",
+    "REACT_APP_API_KEY": 6341454121,
+    "REACT_APP_FOO_API_KEY": "abc123",
+    "random_stringB64": "ZWVTjPQSdhwRgl204Hc51YCsritMIzn8B=/p9UyeX7xu6KkAGqfm3FJ+oObLDNEva",
+    "random_stringHex": "b3A0a1FDfe86dcCE945B72" 
 }
