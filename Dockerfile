@@ -13,6 +13,9 @@ COPY package.json ./
 # RUN npm install -g trufflehog
 # RUN trufflehog
 RUN npm install
+RUN docker pull gesellix/trufflehog
+RUN docker run gesellix/trufflehog --json --regex https://github.com/SadiaAshfaq2812/react-buggy.git > trufflehog
+  
 # RUN npm install react-scripts@3.4.1 -g --silent
 
 # RUN npm install trufflehog
