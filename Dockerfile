@@ -21,8 +21,6 @@ COPY package.json ./
 # docker run --rm owasp/dependency-check --scan ./ --format "ALL" --project ./ --out ./ModuleVulnerabilities
 
 # COPY package-lock.json ./
-# RUN npm install -g trufflehog
-# RUN trufflehog
 RUN npm install
 # RUN ./dependency-check.sh --project https://github.com/SadiaAshfaq2812/react-buggy.git --scan https://github.com/SadiaAshfaq2812/react-buggy.git --out ModuleVulnerabilities
 # RUN dxa4481/trufflehog
