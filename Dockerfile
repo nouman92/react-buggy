@@ -17,17 +17,15 @@ ENV PATH /app/node_modules/.bin:$PATH
 
 # install app dependencies
 COPY package.json ./
+# mkdir ModuleVulnerabilities
+# docker run --rm owasp/dependency-check --scan ./ --format "ALL" --project ./ --out ./ModuleVulnerabilities
 
 # COPY package-lock.json ./
 # RUN npm install -g trufflehog
 # RUN trufflehog
 RUN npm install
-RUN dxa4481/trufflehog
-RUN dxa4481/trufflehog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
-# RUN docker pull gesellix/trufflehog
-# RUN docker run gesellix/trufflehog --json --regex https://github.com/SadiaAshfaq2812/react-buggy.git > trufflehog
-  
-# RUN npm install react-scripts@3.4.1 -g --silent
+# RUN ./dependency-check.sh --project https://github.com/SadiaAshfaq2812/react-buggy.git --scan https://github.com/SadiaAshfaq2812/react-buggy.git --out ModuleVulnerabilities
+# RUN dxa4481/trufflehog
 
 # RUN npm install trufflehog
 
