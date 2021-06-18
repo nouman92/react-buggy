@@ -1,3 +1,5 @@
+scripts:
+  - echo 'hello word'
 
 build:
   # script:
