@@ -1,13 +1,16 @@
-FROM python:3-alpine
-# RUN apk add --no-cache git && 
-RUN pip install gitdb2==3.0.0 trufflehog
-RUN adduser -S truffleHog
-USER truffleHog
-WORKDIR /proj
-ENTRYPOINT [ "trufflehog" ]
-CMD [ "-h" ]
+# FROM python:3-alpine
+# # RUN apk add --no-cache git && 
+# RUN pip install gitdb2==3.0.0 trufflehog
+# RUN adduser -S truffleHog
+# USER truffleHog
+# WORKDIR /proj
+# ENTRYPOINT [ "trufflehog" ]
+# CMD [ "-h" ]
 
 FROM node:12
+
+RUN pip install trufflehog
+RUN trufflehog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
 
 # set working directory
 WORKDIR /app
