@@ -18,6 +18,7 @@ on:
 jobs:
   # This workflow contains a single job called "build"
   job1:
+    runs-on: ubuntu-latest
     steps:
     # - name: Trufflehog Check    
     # - uses: actions/checkout@v2
