@@ -1,5 +1,10 @@
 {
     "RSA private key": "-----BEGIN EC PRIVATE KEY-----",
+    "RSA private key": "-----BEGIN RSA PRIVATE KEY-----",
+    "SSH (OPENSSH) private key": "-----BEGIN OPENSSH PRIVATE KEY-----",
+    "SSH (DSA) private key": "-----BEGIN DSA PRIVATE KEY-----",
+    "SSH (EC) private key": "-----BEGIN EC PRIVATE KEY-----",
+    "PGP private key block": "-----BEGIN PGP PRIVATE KEY BLOCK-----",
     "REACT_APP_API_KEY": 6341454121,
     "REACT_APP_FOO_API_KEY": "abc123",
     "random_stringB64": "ZWVTjPQSdhwRgl204Hc51YCsritMIzn8B=/p9UyeX7xu6KkAGqfm3FJ+oObLDNEva",
