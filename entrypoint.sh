@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-set -e # Abort script at first error
+# set -e # Abort script at first error
 
 args="--regex --entropy=False" # Default trufflehog options
 
