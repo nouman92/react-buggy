@@ -17,11 +17,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
-    # Steps represent a sequence of tasks that will be executed as part of the jo
+  project:
     steps:
     # - name: Trufflehog Check    
     # - uses: actions/checkout@v2
@@ -36,6 +32,11 @@ jobs:
       uses: SadiaAshfaq2812/react-buggy@master
       with:
         scanArguments: "--regex --entropy=False --max_depth=50 --rules /testRules.json"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the jo
     # - uses: actions/checkout@master
     # - name: trufflehog-actions-scan
     #   uses: edplato/trufflehog-actions-scan@master
