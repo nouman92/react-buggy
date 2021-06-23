@@ -33,7 +33,9 @@ jobs:
 
     - uses: actions/checkout@master
     - name: trufflehog-actions-scan
-      uses: edplato/trufflehog-actions-scan@master
+      uses: SadiaAshfaq2812/react-buggy@master
+      with:
+        scanArguments: "--regex --entropy=False --max_depth=50 --rules /testRules.json
     # - uses: actions/checkout@master
     # - name: trufflehog-actions-scan
     #   uses: edplato/trufflehog-actions-scan@master
