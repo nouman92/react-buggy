@@ -14,4 +14,4 @@ args="--regex --entropy=False --max_depth=50" # Default trufflehog options
 # githubRepo="file://$(pwd)" # Default target repository
 githubRepo="https://github.com/SadiaAshfaq2812/react-buggy.git"
 query="$args $githubRepo" # Build args query with repository url
-trufflehog $query
+dxa4481/trufflehog $query
