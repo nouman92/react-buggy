@@ -23,11 +23,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the jo
     steps:
-    - name: Trufflehog Check    
-    - uses: actions/checkout@v2
-    - uses: UnicornGlobal/trufflehog-actions-scan@master
-      with:
-        branch: ${{ github.head_ref }}
+    # - name: Trufflehog Check    
+    # - uses: actions/checkout@v2
+    # - uses: UnicornGlobal/trufflehog-actions-scan@master
+    #   with:
+    #     branch: ${{ github.head_ref }}
 
 
 
