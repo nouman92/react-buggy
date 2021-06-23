@@ -9,8 +9,8 @@
 
 FROM node:12
 
-RUN npm install trufflehog
-RUN trufflehog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
+# RUN npm install trufflehog
+# RUN trufflehog --regex --entropy=False https://github.com/SadiaAshfaq2812/react-buggy.git
 
 # set working directory
 WORKDIR /app
