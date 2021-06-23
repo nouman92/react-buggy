@@ -77,5 +77,5 @@ RUN apk --update add git less openssh && \
 ADD entrypoint.sh  /entrypoint.sh
 ADD regexes.json /regexes.json
 
-ENTRYPOINT ["sh", "./entrypoint.sh"]
-RUN ["chmod", "+x", "./entrypoint.sh"]
+ENTRYPOINT ["sh", "/entrypoint.sh"]
+RUN ["chmod", "+x", "/entrypoint.sh"]
