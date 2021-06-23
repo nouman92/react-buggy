@@ -23,9 +23,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the jo
     steps:
-    - uses: actions/checkout@test-branch
+    - uses: actions/checkout@master
     - name: trufflehog-actions-scan
-      uses: edplato/trufflehog-actions-scan@test-branch
+      uses: edplato/trufflehog-actions-scan@master
     # - uses: actions/checkout@master
     # - name: trufflehog-actions-scan
     #   uses: edplato/trufflehog-actions-scan@master
