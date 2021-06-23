@@ -1,6 +1,17 @@
 # This is a basic workflow to help you get started with Actions
 
 name: CI
+author: 'SadiaAshfaq2812'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  scanArguments:
+    description: 'Argument options for scan.'
+    required: false
+branding:
+  icon: 'shield'
+  color: 'yellow'
 
 # Controls when the workflow will run
 on:
