@@ -32,9 +32,9 @@ jobs:
       uses: SadiaAshfaq2812/react-buggy@master
       with:
         scanArguments: "--regex --entropy=False --max_depth=50 --rules /testRules.json"
-  build:
-    # The type of runner that the job will run on
-    runs-on: ubuntu-latest
+  # build:
+  #   # The type of runner that the job will run on
+  #   runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the jo
     # - uses: actions/checkout@master
