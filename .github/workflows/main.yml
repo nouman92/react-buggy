@@ -27,6 +27,12 @@ jobs:
       uses: SadiaAshfaq2812/react-buggy@master
       # with:
       #   scanArguments: "--regex --entropy=False --max_depth=5 --rules /regexes.json" # Add custom options here*
+    # - name: Trufflehog Check
+      # uses: UnicornGlobal/trufflehog-actions-scan@v1.0.0
+
+  dep-check:
+    - name: Opinionated OWASP Dependency-Check
+      uses: Djelibeybi/opinionated-dependency-check@v1
 
 
     # - uses: actions/checkout@master
