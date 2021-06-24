@@ -25,8 +25,8 @@ jobs:
     - uses: actions/checkout@master
     - name: trufflehog-actions-scan
       uses: SadiaAshfaq2812/react-buggy@master
-      # with:
-      #   scanArguments: "--regex --entropy=False --max_depth=5 --rules /regexes.json" # Add custom options here*
+      with:
+        scanArguments: "--regex --entropy=False --max_depth=5 --rules /regexes.json" # Add custom options here*
 
 
     # - uses: actions/checkout@master
