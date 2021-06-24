@@ -1,5 +1,4 @@
 {
-    "AWS private key": "-----BEGIN AWS PRIVATE KEY-----",
     "RSA private key block": "-----BEGIN RSA PRIVATE KEY-----",
     "SSH (DSA) private key": "-----BEGIN DSA PRIVATE KEY-----",
     "SSH (EC) private key": "-----BEGIN EC PRIVATE KEY-----",
