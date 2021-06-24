@@ -1,9 +1,7 @@
 {
-    "TEST private key": "-----BEGIN TEST PRIVATE KEY-----",
-    "RSA private key": "-----BEGIN RSA PRIVATE KEY-----",
+    "RSA private key": "-----BEGIN TEST PRIVATE KEY-----",
+    "RSA private key block": "-----BEGIN RSA PRIVATE KEY BLOCK-----",
     "SSH (DSA) private key": "-----BEGIN DSA PRIVATE KEY-----",
     "SSH (EC) private key": "-----BEGIN EC PRIVATE KEY-----",
-    "PGP private key block": "-----BEGIN PGP PRIVATE KEY BLOCK-----",
-    "Square Access Token": "sq0atp-[0-9A-Za-z\\-_]{22}",
-    "Square OAuth Secret": "sq0csp-[0-9A-Za-z\\-_]{43}"
+    "PGP private key block": "-----BEGIN PGP PRIVATE KEY BLOCK-----"
 }
