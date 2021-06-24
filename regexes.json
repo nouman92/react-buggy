@@ -1,7 +1,7 @@
 {
-    "RSA1 private key": "-----BEGIN PRIVATE KEY-----",
+    "test private key": "238483349342bnmsdnmbfdmb33vj43v@1i34789875%$^%^%^%$5nbcxjhvbjxh@@JHh",
     "RSA private key": "-----BEGIN RSA PRIVATE KEY-----",
     "SSH (DSA) private key": "-----BEGIN DSA PRIVATE KEY-----",
     "SSH (EC) private key": "-----BEGIN EC PRIVATE KEY-----",
-    "PGP private key block": "-----BEGIN PGP PRIVATE KEY BLOCK-----",
+    "PGP private key block": "-----BEGIN PGP PRIVATE KEY BLOCK-----"
 }
