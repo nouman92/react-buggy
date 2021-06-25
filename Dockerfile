@@ -60,8 +60,8 @@ FROM python:3.7-alpine
 
 LABEL name="trufflehog-actions-scan"
 LABEL version="1.0.0"
-LABEL repository="https://github.com/SadiaAshfaq2812/react-buggy.git"
-LABEL homepage="https://github.com/SadiaAshfaq2812/react-buggy.git"
+LABEL repository="https://github.com/SadiaAshfaq2812/react-buggy"
+LABEL homepage="https://github.com/SadiaAshfaq2812/react-buggy"
 LABEL maintainer="SadiaAshfaq2812"
 
 LABEL "com.github.actions.name"="Trufflehog Actions Scan"
