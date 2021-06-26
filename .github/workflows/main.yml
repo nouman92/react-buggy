@@ -10,4 +10,4 @@ jobs:
          uses: nouman92/trufflehog-actions-scan@master
          with:
            branch: ${{ github.head_ref }}
-           scanArguments: "--regex --max_depth=10  --rules /regexes.json"
+           scanArguments: "--regex --entropy=False --max_depth=20  --rules /regexes.json"
